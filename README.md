@@ -4,7 +4,7 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/claremburu/spotify-clone.git
+$ git clone https://github.com/claremburu/whatsapp-clone.git
 
 # Setup
 $ cd client
