@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  flex-direction: row;
+}
+.home__left {
+  flex-grow: 1;
+  height: 100vh;
+}
+.home__right {
+  flex-grow: 10;
+  height: 100vh;
+}

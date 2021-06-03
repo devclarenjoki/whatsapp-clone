@@ -1,0 +1,94 @@
+@import "../../../App.scss";
+
+.sidebar {
+  height: 100%;
+  overflow-y: auto;
+  background-color: $primary-dark-1;
+  border-right: 1px solid #404447;
+}
+.sidebar__header {
+  background-color: $primary-dark;
+  height: 2.8em;
+  padding: 0.6em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__headerRight .MuiSvgIcon-root {
+  color: $secondary !important;
+}
+
+.sidebar__search {
+  background-color: $primary-dark-1;
+  padding: 0.58em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  border-bottom: 1px solid #242d32;
+}
+.sidebar__search input {
+  background-color: #323739;
+  padding: 8px;
+  border: none;
+  border-radius: 60px;
+  width: 95%;
+  color: #738284;
+}
+
+.chat__tile {
+  display: flex;
+  height: 4.5em;
+  background-color: $primary-dark-1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #242d32;
+  cursor: pointer;
+}
+
+.chat__tileInnerContainer {
+  display: flex;
+}
+.chat__tileName {
+  margin-left: 1em;
+  color: #e8fff8;
+}
+.chat__tileNameText {
+  font-size: 18px !important;
+}
+.chat__tileNameSubText {
+  color: $secondary;
+}
+.chat__tileRight {
+  color: $secondary;
+}
+.chat__tileRight.active {
+  color: #f50057;
+}
+.chat__tileRight > svg {
+  display: block;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.chat__tileName .MuiSvgIcon-root {
+  font-size: 15px !important;
+  margin-right: 7px;
+}
+.chat__tileName.read .MuiSvgIcon-root {
+  color: #31ace3;
+}
+.chat__badges {
+  display: flex;
+  margin-top: 8px;
+}
+.chat__badges > .MuiSvgIcon-root {
+  margin-right: 10px;
+}
+.chat__sideBaBadge {
+  margin-top: 12px;
+  margin-left: 20px;
+}

@@ -1,0 +1,13 @@
+@import "../../../App.scss";
+
+.screen {
+  background-color: $primary-dark;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.screen__title {
+  color: $secondary;
+}

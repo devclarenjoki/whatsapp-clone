@@ -1,0 +1,30 @@
+{
+  "name": "whatsapp-clone-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Shri Saran Raj N",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-rate-limit": "^5.1.3",
+    "helmet": "^4.1.0",
+    "hpp": "^0.2.3",
+    "http-errors": "^1.8.0",
+    "jest": "^26.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "pusher": "^3.0.1",
+    "xss-clean": "^0.1.1"
+  },
+  "scripts": {
+    "start": "export NODE_ENV=development && node server.js",
+    "dev": "export NODE_ENV=development && nodemon server"
+  }
+}

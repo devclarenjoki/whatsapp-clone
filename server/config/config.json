@@ -1,0 +1,10 @@
+{
+  "development": {
+    "MONGO_URI": "<>",
+    "secret": "abc"
+  },
+  "production": {
+    "MONGO_URI": "<>",
+    "secret": "abc"
+  }
+}

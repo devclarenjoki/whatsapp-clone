@@ -1,0 +1,121 @@
+@import "../../../App.scss";
+.chatBox {
+  display: flex;
+  flex-direction: column;
+}
+.chatBox__header {
+  background-color: $primary-dark;
+  height: 2.8em;
+  padding: 0.6em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $primary-dark;
+}
+.chatBox__headerLeft {
+  display: flex;
+  align-items: center;
+}
+.chatBox__headerTitle {
+  display: inline-block;
+  padding-left: 10px;
+  color: #e8fff8;
+  font-size: 20px;
+}
+
+.chatBox__headerRight .MuiSvgIcon-root {
+  color: $secondary !important;
+}
+
+.chatBox__chatArea {
+  height: 100vh - 19.9vh;
+  overflow-y: auto;
+  background-image: url("../../../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.chatBox__inputWrapper {
+  //   position: fixed;
+  //   bottom: 0;
+  height: 60px;
+  background-color: $primary-dark;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.chatBox__inputWrapper .MuiSvgIcon-root {
+  font-size: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: $secondary !important;
+}
+.chatBox__inputWrapper input {
+  background-color: #33383b;
+  font-size: 15px;
+  border: none;
+  padding: 13px;
+  border-radius: 60px;
+  margin-left: 20px;
+  width: 80%;
+  color: $secondary;
+}
+.chatBox__message:first-child {
+  margin-top: 10px;
+}
+.chatBox__message {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.chatBox__messageWrapper {
+  background-color: #262d31;
+  max-width: 300px;
+  min-width: 100px;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  color: #e8fff8;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+.chatBox__message.incomingMessage {
+  margin-left: 20px;
+  padding-right: 5px;
+}
+
+.chatBox__message.outgoingMessage .chatBox__messageWrapper {
+  float: right;
+  justify-content: space-between;
+  margin-right: 20px;
+  background-color: #054740;
+}
+.chatBox__message.outgoingMessage {
+  justify-content: space-between;
+}
+.chatBox__messageFooter {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+.chatBox__messageFooterTimeStamp {
+  font-size: 10px;
+  color: $secondary;
+}
+.chatBox__messageFooter .MuiSvgIcon-root {
+  font-size: 15px !important;
+  margin-left: 6px;
+}
+.chatBox__HeaderContainer {
+  display: flex;
+  flex-direction: column;
+}
+.onlineStatusText {
+  margin-left: 10px !important;
+  color: $secondary;
+}
